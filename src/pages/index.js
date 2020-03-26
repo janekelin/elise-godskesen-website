@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from 'gatsby';
-import Header from '../components/layout/Header';
+import Page from "../components/layout/Page";
 //import '../scss/site.scss';
 
 export default () => (
-  <main>
-  <section id="home">
-        <h2 class="sr-only section__title">Presentation</h2>
+  <Page>
+      <section id="home">
+        <h2 className="sr-only section__title">Presentation</h2>
         <p>
           I am a front-end developer passionate about UX/UI, accessibility, and
           electronic services. I have a solid understanding of Git/GitHub,
@@ -18,5 +17,5 @@ export default () => (
           opportunities.
         </p>
       </section>
-      </main>
-  );
+    </Page>
+)
