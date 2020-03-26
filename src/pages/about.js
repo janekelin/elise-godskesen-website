@@ -9,7 +9,7 @@ export default () => (
       </h2>
       <p>
         After 13 years in media, marketing, and academic advising, I decided to
-        shift from <i class="low-voice">not a real science</i> social sciences
+        shift from <i className="low-voice">not a real science</i> social sciences
         to IT sector. Before I realized how much I love CSS, JS &amp; co I
         studied
         <strong>
@@ -19,7 +19,7 @@ export default () => (
         expertise in technologies that can make the Web a better place.
       </p>
       <p>
-        Check out my <i class="fab fa-linkedin"></i>
+        Check out my <i className="fab fa-linkedin"></i>
         <a href="https://www.linkedin.com/in/ianagodskesen/">
           LinkedIn profile
         </a>
