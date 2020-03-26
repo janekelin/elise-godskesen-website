@@ -1,5 +1,5 @@
 import React from "react"
-import Page from "../components/layout/PAge"
+import Page from "../components/layout/Page"
 
 export default () => (
   <Page>
