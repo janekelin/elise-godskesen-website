@@ -1,0 +1,15 @@
+.footer {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+@media print {
+  .footer {
+    display: block; 
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+  }
+}

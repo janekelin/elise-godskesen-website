@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import css from './navigation.module.css'
 
 const NavigationMenu = () => {
   return (
     <section id="mainNav" className="navigation">
       <h2 className="sr-only section__title">Navigation</h2>
-      <nav className="container--flex">
+      <nav className={css.navigation}>
         <Link to="/" data-img="0">
           Home
         </Link>

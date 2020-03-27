@@ -1,0 +1,64 @@
+.card {
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 5px 17px 4px var(--color-shadow);
+  padding: 3%;
+ margin: 20px auto;
+}
+
+.card:focus {
+  height: auto;
+  min-height: 200px;
+}
+
+.taglist {
+  display: flex; 
+  justify-content: space-evenly; 
+  align-content: center; 
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 25px;
+  font-size: .75rem; 
+}
+
+@media screen and (min-width: var(--large-screen)) { 
+  .taglist {font-size: 1.25rem; }
+}
+
+@media (any-hover: hover) { 
+  .card{
+    height: 200px;
+    width: 60%;
+  }  
+
+  .card:hover, 
+  .card:focus {
+    height: auto;
+    min-height: 200px;
+  }
+}
+
+@media print {
+  .card {
+    width: auto;
+    height: auto;
+    display: block; 
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+  }
+
+  .taglist {
+    display: block; 
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+  }
+}

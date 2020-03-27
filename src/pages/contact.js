@@ -2,8 +2,7 @@ import React from "react"
 import Page from "../components/layout/Page"
 
 export default () => (
-  <Page>
-    <section id="contact" className="container--flex content--wrapped">
+  <Page type="contact">
       <h2 className="sr-only section__title">My contact details</h2>
       <div id="linkedin">
         <a href="https://www.linkedin.com/in/ianagodskesen/">
@@ -29,6 +28,5 @@ export default () => (
           <i className="fab fa-codepen fa-10x"></i>
         </a>
       </div>
-    </section>
   </Page>
 )

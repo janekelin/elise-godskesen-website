@@ -1,17 +1,18 @@
-import React from 'react';
-import Header from "../layout/Header";
-import Footer from '../layout/Footer';
+import React from "react"
+import Header from "./Header"
+import Footer from "./Footer"
+import SectionContainer from "./SectionContainer"
 
-const Page = props => {
+const Page = ({ children, type}) => {
   return (
     <>
       <Header />
       <main>
-        {props.children}
+        <SectionContainer children={children} type={type} />
       </main>
       <Footer />
     </>
-  );
+  )
 }
 
-export default Page;
+export default Page

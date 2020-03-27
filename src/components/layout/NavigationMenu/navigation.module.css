@@ -1,0 +1,14 @@
+.navigation {
+  display: flex; 
+  justify-content: space-evenly; 
+}
+
+@media print {
+  .navigation {
+    display: block; 
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+  }
+}

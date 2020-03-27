@@ -41,14 +41,14 @@
    * A better looking default horizontal rule
    */
   
-  // hr {
-  //   display: block;
-  //   height: 1px;
-  //   border: 0;
-  //   border-top: 1px solid #ccc;
-  //   margin: 1em 0;
-  //   padding: 0;
-  // }
+   hr {
+     display: block;
+     height: 1px;
+     border: 0;
+     border-top: 1px solid #ccc;
+     margin: 1em 0;
+     padding: 0;
+   }
   
   /*
    * Remove the gap between audio, canvas, iframes,
@@ -69,19 +69,19 @@
    * Remove default fieldset styles.
    */
   
-  // fieldset {
-  //   border: 0;
-  //   margin: 0;
-  //   padding: 0;
-  // }
+   fieldset {
+     border: 0;
+     margin: 0;
+     padding: 0;
+   }
   
   /*
    * Allow only vertical resizing of textareas.
    */
   
-  // textarea {
-  //   resize: vertical;
-  // }
+   textarea {
+     resize: vertical;
+   }
   
   /* ==========================================================================
      Browser Upgrade Prompt
@@ -222,9 +222,9 @@
     a[href]:after {
       content: " (" attr(href) ")";
     }
-    // abbr[title]:after {
-    //   content: " (" attr(title) ")";
-    // }
+     abbr[title]:after {
+      content: " (" attr(title) ")";
+     }
     /*
        * Don't show links that are fragment identifiers,
        * or use the `javascript:` pseudo protocol
@@ -234,21 +234,21 @@
     a[href^="javascript:"]:after {
       content: "";
     }
-    // pre {
-    //   white-space: pre-wrap !important;
-    // }
-    // pre,
-    // blockquote {
-    //   border: 1px solid #999;
-    //   page-break-inside: avoid;
-    // }
+     pre {
+       white-space: pre-wrap !important;
+     }
+     pre,
+     blockquote {
+       border: 1px solid #999;
+       page-break-inside: avoid;
+     }
     /*
        * Printing Tables:
        * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
        */
-    // thead {
-    //   display: table-header-group;
-    // }
+     thead {
+       display: table-header-group;
+     }
     tr,
     img {
       page-break-inside: avoid;

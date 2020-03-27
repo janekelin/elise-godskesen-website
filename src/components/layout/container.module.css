@@ -1,0 +1,30 @@
+.contact {
+  align-content: center; 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projects {
+  display: flex; 
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media print {
+  .contact {
+    display: block; 
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+  }
+
+  .projects {
+    display: block; 
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+  }
+}

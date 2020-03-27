@@ -1,12 +1,11 @@
 import React from "react"
-import NavigationMenu from "../layout/NavigationMenu"
+import NavigationMenu from "../NavigationMenu"
 import { Link } from "gatsby"
+import css from './header.module.css'
 
 const Header = () => {
   return (
-    <header
-      id="js-header"
-      className="container--flex container--flex--vertical"
+    <header className={css.header}
     >
       <Link to="/">
         <h1 data-img="0">iana godskesen</h1>
@@ -22,4 +21,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header
