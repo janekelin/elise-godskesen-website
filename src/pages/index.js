@@ -13,8 +13,7 @@ export default () => (
           free time I like to learn new technologies and frameworks.
         </p>
         <p>
-          From <strong>August 2019</strong>, I am open for new career
-          opportunities.
+          From <strong>November 2019</strong>, I am a Front-End developer at Fitness24Seven.
         </p>
       </section>
     </Page>
