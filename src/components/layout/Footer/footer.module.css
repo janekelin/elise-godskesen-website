@@ -2,6 +2,26 @@
   display: flex; 
   align-items: center;
   justify-content: center;
+  bottom: 0;
+  z-index: var(--z-footer);
+  margin-top: 50px; 
+  padding-bottom: 50px;
+  width: 100%; 
+  font-style: italic;
+  background: var(--gradient-footer); 
+}
+
+@media screen and (min-width: 425px) {
+  .footer {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) { 
+  .footer { 
+    position: fixed; 
+    padding-bottom: 0;
+  } 
 }
 
 @media print {
@@ -11,5 +31,6 @@
     margin: 10px;
     padding: 20px;
     width: auto;
+    position: static;
   }
 }

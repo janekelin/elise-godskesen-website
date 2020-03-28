@@ -1,26 +1,9 @@
-
-/*
-            ***TYPOGRAPHY***
-*/
-
-body { 
-  font-family: $font-primary; 
-  font-size: 100%;
-}
-
 h1 {
   text-align: right;
 
   @media screen and (min-width: $tablet) { font-size: 3rem; }
   @media screen and (min-width: $desktop) { font-size: 4rem; }
   @media screen and (min-width: $large-screen) { font-size: 8rem; }
-}
-
-.navigation {
-  font-weight: 300;
-
-  @media screen and (min-width: $small-tablet) { font-size: 1.2rem; }
-  @media screen and (min-width: $large-screen) { font-size: 3.2rem; }
 }
 
 main {
@@ -36,12 +19,6 @@ main {
   @media screen and (min-width: $large-screen) { font-size: 3.5rem; }
 }
 
-.project__title {
-  font-size: 1rem;
-
-  @media screen and (min-width: $tablet) { font-size: 1.2rem; }
-  @media screen and (min-width: $large-screen) { font-size: 1.5rem; }
-}
 
 button:not(.btn--control) {
   font-weight: 400;
@@ -52,11 +29,6 @@ ul.tags {
   @media screen and (min-width: $large-screen) { font-size: 1.25rem; }
 }
 
-.clear,
-.choose {
-    font-size: .7rem;
-    @media screen and (min-width: $large-screen) { font-size: 1rem; }
-}
 
 .low-voice {
   font-style: normal;
@@ -67,4 +39,3 @@ strong { font-weight: normal; }
 
 ul { list-style-type: none; }
 
-footer { font-style: italic; }

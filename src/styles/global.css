@@ -51,16 +51,6 @@
 :root { --font-primary: 'Raleway', Verdana, Helvetica, sans-serif; }
 
 /*
-            ***MEDIA QUERIES***
-*/
-:root {
-  --tablet: 768px;
-  --desktop: 1024px;
-  --large-screen: 1440px;
-  --very-large-screen: 2560px;
-}
-
-/*
             ***Z_INDECES***
 */
 :root {
@@ -69,4 +59,26 @@
   --z-project-description: 13;
   --z-footer: 20;
   --z-navigation: 21;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body { 
+  font-family: var(--font-primary); 
+  font-size: 100%;
+}
+
+@media print {
+  body {
+    font-family: serif;
+    font-size: 12pt;
+  }
 }

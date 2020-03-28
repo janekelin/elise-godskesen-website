@@ -117,11 +117,11 @@
         className={css.card}
         style={{ backgroundImage: `url(${project.imageUrl})` }}
       >
-        <h3 className="project__title">{project.title}</h3>
-        <p className="project__description">
+        <h3 className={css.title}>{project.title}</h3>
+        <p className={css.description}>
           {project.description ? project.description : ""}
         </p>
-        <div className="deco"></div>
+        <div className={css.deco}></div>
       </a>
     )
   }
@@ -144,23 +144,23 @@
     ))
 
     return (
-      <div className="container--relative container--tags">
+      <SectionContainer type="taglist">
         <ul className={css.taglist}>{tags}</ul>
         <button
-          className="btn--control clear"
+          className={`${css.control} ${css.clear}`}
           onClick={handleClick}
           hidden={!props.showClear}
         >
           Clear all {createSRonlyText("tags")}
         </button>
         <button
-          className="btn--control choose"
+          className={`${css.control} ${css.choose}`}
           onClick={handleClick}
           hidden={!props.showChoose}
         >
           Choose all {createSRonlyText("tags")}
         </button>
-      </div>
+      </SectionContainer>
     )
   }
 

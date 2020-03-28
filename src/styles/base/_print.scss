@@ -6,19 +6,14 @@
 @media print {
 
   //hide unnecessary elements
-  .navigation,
   .portrait,
   .low-voice,
-  .container--tags,
   i[class^="fab"] { 
     display: none; 
   }
 
   //linerize the layout
-  header,
-  main,
-  .container--flex,
-  footer { 
+  main { 
     display: block; 
     height: auto;
     margin: 10px;
@@ -28,12 +23,6 @@
 
   .section__title {
     margin-top: 10px;
-  }
-
-  header,
-  footer,
-  .project__title { 
-    position: static; 
   }
 
   main {
@@ -49,18 +38,12 @@
   }
 
   // adjust the typography
-  body {
-    font-family: serif;
-    font-size: 12pt;
-  }
+  
 
   h1 { 
     text-align: center; 
   }
 
-  .project__title {
-    font-size: 18pt;
-  }
 
   // add suplementary content
   a:not(.card) {

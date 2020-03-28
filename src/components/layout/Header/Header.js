@@ -8,7 +8,7 @@ const Header = () => {
     <header className={css.header}
     >
       <Link to="/">
-        <h1 data-img="0">iana godskesen</h1>
+        <h1 className={css.heading} data-img="0">iana godskesen</h1>
       </Link>
       <NavigationMenu />
       <img

@@ -1,33 +1,4 @@
 
-/*
-            ***BOX MODEL***
-*/
-
-html {
-  box-sizing: border-box;
-}
-
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
-}
-
-header {
-  @media screen and (min-width: $tablet) { 
-    width: 40%;
-    height: 100vh;
-   }
-}
-
-h1 { 
-  @media screen and (max-width: $max-tablet){ padding-right: 5vw; }
-}
-
-.navigation { 
-  width: 100%;
-  padding: 3% 0;
-}
 
 .portrait { 
   margin: auto;
@@ -63,13 +34,6 @@ main {
   margin-top: 50px;
 }
 
-.container--tags {
-  &:after,
-  &:before {
-    height: 6px;
-    width: 55px;
-  }
-}
 
 .tags {
   margin: 0;
@@ -84,9 +48,6 @@ main {
   }
 }
 
-.btn--control:before {
-  padding-right: 5px;
-}
 
 .card { 
  padding: 3%;
@@ -110,26 +71,4 @@ main {
      height: auto;
      min-height: 200px;
   }
-}
-
-.project__title,
-.project__description {
-  margin: 0;
-}
-
-.project__title {
-  padding: 2px 5px;
-}
-
-.project__description {
-  padding: 25px;
-}
-
-footer {
-  margin-top: 50px; 
-  padding-bottom: 50px;
-  width: 100%; 
-
-  @media screen and (min-width: $small-tablet) { padding-bottom: 70px; }
-  @media screen and (min-width: $tablet) { padding-bottom: 0; }
 }

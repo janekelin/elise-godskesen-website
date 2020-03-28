@@ -16,6 +16,51 @@
   min-height: 200px;
 }
 
+.control {
+  position: absolute; /*within the tag cloud*/
+  padding-right: 5px;
+  background-color: var(--color-bg-tags);
+  border: solid 2px var(--color-border-button);
+  border-radius: 5px;
+  color: var(--color-tags); 
+  cursor: pointer;
+  border-color: var(--color-bg-tags); /*to create the effect of blending with the section background*/
+  font-size: .7rem;
+}
+
+.clear {
+  right: 0;
+  top: -15px;
+  content: "\2573"; /*cross*/
+}
+
+.choose {
+  bottom: -15px;
+  left: 0;
+  content: "\2713"; /*checkmark*/
+}
+
+.deco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--z-deco);
+  background-color: var(--color-bg-deco);
+  opacity: .2;
+}
+
+.description {
+  z-index: var(--z-project-description);
+  margin: 0;
+  padding: 25px;
+}
+
+.card:focus .description {
+  visibility: visible;
+}
+
 .taglist {
   display: flex; 
   justify-content: space-evenly; 
@@ -26,8 +71,43 @@
   font-size: .75rem; 
 }
 
-@media screen and (min-width: var(--large-screen)) { 
+.title {
+  bottom: -10px;
+  left: -10px;
+  position: absolute; /*within the card*/
+  z-index: var(--z-project-title);
+  margin: 0;
+  padding: 2px 5px;
+  background-color: var(--color-bg-project-title);
+  box-shadow: -1px -1px 3px 1px var(--color-shadow), 1px 1px 3px 1px var(--color-shadow);
+  color: var(--color-project-title);
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    left: -20px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    left: -30px;
+  }
+}
+
+@media screen and (min-width: 1440px) { 
+  .control { font-size: 1rem; }
+  
   .taglist {font-size: 1.25rem; }
+
+  .title {
+    left: -60px;
+    font-size: 1.5rem;
+  }
+
+  
 }
 
 @media (any-hover: hover) { 
@@ -41,6 +121,24 @@
     height: auto;
     min-height: 200px;
   }
+
+  .deco {
+    opacity: .8;
+  }
+
+  .card:hover .deco,
+  .card:focus .deco {
+    opacity: .9;
+  }
+
+  .description {
+    visibility: hidden;
+  }
+
+  .card:hover .description, 
+  .card:focus .description {
+    visibility: visible;
+}
 }
 
 @media print {
@@ -60,5 +158,10 @@
     margin: 10px;
     padding: 20px;
     width: auto;
+  }
+
+  .title {
+    position: static;
+    font-size: 18pt;
   }
 }

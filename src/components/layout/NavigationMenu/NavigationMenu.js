@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import css from './navigation.module.css'
+import SectionContainer from '../../layout/SectionContainer'
 
 const NavigationMenu = () => {
   return (
-    <section id="mainNav" className="navigation">
+    <SectionContainer type="navigation">
       <h2 className="sr-only section__title">Navigation</h2>
       <nav className={css.navigation}>
         <Link to="/" data-img="0">
@@ -20,7 +21,7 @@ const NavigationMenu = () => {
           Contact
         </Link>
       </nav>
-    </section>
+    </SectionContainer>
   )
 }
 
