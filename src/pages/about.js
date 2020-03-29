@@ -1,17 +1,17 @@
 import React from "react"
 import Page from "../components/layout/Page"
+import SectionContainer from "../components/layout/Containers/SectionContainer"
+import css from "../styles/typography.module.css"
 
 export default () => (
-  <Page type="about">
-      <h2 className="section__title">
-        Webdev enthusiast looking for new challenges
-      </h2>
+  <Page>
+    <SectionContainer title="Webdev scout">
       <p>
         After 13 years in media, marketing, and academic advising, I decided to
-        shift from <i className="low-voice">not a real science</i> social
+        shift from <i className={css.subtle}>not a real science</i> social
         sciences to IT sector. Before I realized how much I love CSS, JS &amp;
-        co I studied
-        <strong>
+        co I studied&nbsp;
+        <strong className={css.accent}>
           project management, software development, and electronic services
         </strong>
         . Combined with my soft skills, these studies equipped me with a broad
@@ -19,10 +19,14 @@ export default () => (
       </p>
       <p>
         Check out my <i className="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/ianagodskesen/">
-          LinkedIn profile
+        <a
+          href="https://www.linkedin.com/in/ianagodskesen/"
+          className={css.link}
+        >
+          LinkedIn profile&nbsp;
         </a>
         to find out what I have achieved and which competences I have acquired.
       </p>
+    </SectionContainer>
   </Page>
 )

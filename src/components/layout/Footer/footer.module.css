@@ -1,6 +1,5 @@
 .footer {
   display: flex; 
-  align-items: center;
   justify-content: center;
   bottom: 0;
   z-index: var(--z-footer);
@@ -9,12 +8,7 @@
   width: 100%; 
   font-style: italic;
   background: var(--gradient-footer); 
-}
-
-@media screen and (min-width: 425px) {
-  .footer {
-    padding-bottom: 70px;
-  }
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) { 
@@ -34,3 +28,4 @@
     position: static;
   }
 }
+

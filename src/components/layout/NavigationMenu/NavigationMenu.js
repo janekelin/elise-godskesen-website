@@ -1,27 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
-import css from './navigation.module.css'
-import SectionContainer from '../../layout/SectionContainer'
+import css from "./navigation.module.css"
+import NavigationContainer from "../Containers/NavigationContainer"
 
 const NavigationMenu = () => {
   return (
-    <SectionContainer type="navigation">
-      <h2 className="sr-only section__title">Navigation</h2>
+    <NavigationContainer>
       <nav className={css.navigation}>
-        <Link to="/" data-img="0">
+        <Link to="/" data-img="0" className={css.link}>
           Home
         </Link>
-        <Link to="/about/" data-img="1">
+        <Link to="/about/" data-img="1" className={css.link}>
           About
         </Link>
-        <Link to="/projects/" data-img="2">
+        <Link to="/projects/" data-img="2" className={css.link}>
           Projects
         </Link>
-        <Link to="/contact/" data-img="3">
+        <Link to="/contact/" data-img="3" className={css.link}>
           Contact
         </Link>
       </nav>
-    </SectionContainer>
+    </NavigationContainer>
   )
 }
 

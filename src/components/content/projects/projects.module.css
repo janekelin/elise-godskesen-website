@@ -1,3 +1,16 @@
+.button {
+  -webkit-appearance: none;
+  background-color: var(--color-bg-tags);
+  border-color: var(--color-tags);
+  border-radius: 5px;
+  border: solid 2px var(--color-border-button);
+  color: var(--color-tags); 
+  cursor: pointer;
+  font-weight: 400;
+  padding: 7px 10px;
+  outline: none;
+}
+
 .card {
   display: flex; 
   justify-content: space-evenly;
@@ -9,6 +22,10 @@
   box-shadow: 0 5px 17px 4px var(--color-shadow);
   padding: 3%;
  margin: 20px auto;
+}
+
+.card:first {
+  margin-top: 40px;
 }
 
 .card:focus {
@@ -27,6 +44,7 @@
   border-color: var(--color-bg-tags); /*to create the effect of blending with the section background*/
   font-size: .7rem;
 }
+
 
 .clear {
   right: 0;
@@ -61,6 +79,10 @@
   visibility: visible;
 }
 
+.passive {
+  opacity: .2;
+}
+
 .taglist {
   display: flex; 
   justify-content: space-evenly; 
@@ -69,6 +91,11 @@
   margin: 0;
   padding: 25px;
   font-size: .75rem; 
+  list-style-type: none;
+}
+
+.tag {
+  margin: 5px 0;
 }
 
 .title {

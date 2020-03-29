@@ -24,7 +24,6 @@
   --color-border-button: var(--color-red);
   --color-border-container: var(--color-red--transparent);
   --color-border-navigation: var(--color-grey);
-  --color-icons: var(--color-red);
   --color-line-through: var(--color-red);
   --color-link: var(--color-yellow);
   --color-link-active: var(--color-red);
@@ -76,9 +75,20 @@ body {
   font-size: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 @media print {
   body {
     font-family: serif;
     font-size: 12pt;
   }
+
+  a[href*="linkedin"]::before { content: "My LinkedIn: "; }
+  a[href*="github"]::before { content: "My GitHub: "; }
+  a[href*="twitter"]::before { content: "My Twitter: "; }
+  a[href*="codepen"]::before { content: "My CodePen: "; }
+
 }

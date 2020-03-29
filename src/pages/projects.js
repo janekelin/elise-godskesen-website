@@ -1,9 +1,9 @@
 import React from "react"
 import Page from "../components/layout/Page"
-import ProjectSection from '../components/content/projects/ProjectSection'
+import ProjectSection from "../components/content/projects/ProjectSection"
 
 export default () => (
-  <Page type="projects">
-        <ProjectSection />
+  <Page>
+    <ProjectSection />
   </Page>
 )

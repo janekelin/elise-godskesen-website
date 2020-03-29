@@ -1,3 +1,8 @@
+.section {
+  min-height: 50vh;
+    padding: 0 5vw;
+}
+
 .contact {
   align-content: center; 
   display: flex; 
@@ -47,11 +52,25 @@
     left: 0;
   }
 
+  .title {
+    margin-top: 50px;
+    font-size: 1.7rem;
+  font-weight: 200; 
+  }
+
 @media screen and (min-width: 425px) { 
   .navigation { font-size: 1.2rem; }
 }
 
 @media screen and (min-width: 768px) {
+.section {
+  margin: auto;
+      max-width: 80ch;
+      min-height: 100vh;
+      padding: 15vh 0 0;
+      width: 80%;
+}
+
   .navigation {
     position: static;
     border-top-color: transparent;
@@ -60,10 +79,19 @@
 
 
   @media screen and (min-width: 1440px) { 
+    .navigation {font-size: 2.2rem; }
+    .title {font-size: 3.5rem;}
+  }
+
+  @media screen and (min-width: 2560px) { 
     .navigation {font-size: 3.2rem; }
   }
 
 @media print {
+  .section {
+    min-height: auto;
+    padding: 0;
+  }
   .contact {
     display: block; 
     height: auto;
@@ -86,5 +114,9 @@
 
   .taglist {
     display: none; 
+  }
+
+  .title {
+    margin-top: 10px;
   }
 }
