@@ -12,11 +12,6 @@
     border-bottom-style: dotted;
   }
 
-  @media screen and (min-width: 768px) {
-    .navigation {animation: none;}
-    
-  }
-
 @media print {
   .navigation {
     display: block; 

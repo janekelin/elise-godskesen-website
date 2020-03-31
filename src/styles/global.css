@@ -42,13 +42,6 @@
                       var(--color-yellow) 89%);
 }
 
-
-/*
-            ***FONTS***
-*/
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400');
-:root { --font-primary: 'Raleway', Verdana, Helvetica, sans-serif; }
-
 /*
             ***Z_INDECES***
 */
@@ -60,19 +53,10 @@
   --z-navigation: 21;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *, 
 *:before, 
 *:after {
   box-sizing: inherit;
-}
-
-body { 
-  font-family: var(--font-primary); 
-  font-size: 100%;
 }
 
 a {

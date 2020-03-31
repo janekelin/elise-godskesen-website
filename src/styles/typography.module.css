@@ -1,10 +1,8 @@
 .subtle {
-  font-style: normal;
   text-decoration: line-through var(--color-line-through) double;
 }
 
 .accent { 
-  font-weight: normal; 
   background-color: var(--color-bg-strong);
 }
 
