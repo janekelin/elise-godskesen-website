@@ -10,8 +10,8 @@
 }
 
 .portrait {
-  margin: auto;
-  width: 35%;
+  margin: 0 auto;
+  width: 50%;
   border-radius: 30%;
 }
 

@@ -3,6 +3,10 @@
   justify-content: space-evenly; 
 }
 
+.link {
+  display: inline-flex;
+}
+
 .link:hover,
 .link:focus {
     border-bottom: 5px solid var(--color-navigation);

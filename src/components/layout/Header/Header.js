@@ -2,6 +2,7 @@ import React from "react"
 import NavigationMenu from "../NavigationMenu"
 import { Link } from "gatsby"
 import css from "./header.module.css"
+import portrait from "../../../images/b_image0.png"
 
 const Header = () => {
   return (
@@ -13,8 +14,8 @@ const Header = () => {
       </Link>
       <NavigationMenu />
       <img
-        className={css.cportrait}
-        src="build/images/b_image0.png"
+        className={css.portrait}
+        src={portrait}
         alt="Portrait of Iana Godskesen Kalinichenko"
       />
     </header>
