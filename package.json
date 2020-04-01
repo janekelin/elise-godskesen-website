@@ -12,7 +12,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "publish": "npm run format && npm run build && surge"
+    "publish": "npm run format && npm run build && cd public && surge --domain iana-godskesen.surge.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
