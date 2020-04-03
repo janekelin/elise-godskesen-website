@@ -16,7 +16,7 @@ const Header = () => {
       }
     `
   )
-  console.log(data)
+
   return (
     <header className={css.header}>
       <Link to="/">
