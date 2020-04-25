@@ -1,7 +1,9 @@
+/* eslint-disable linebreak-style */
 module.exports = {
   siteMetadata: {
     title: `Iana Godskesen`,
   },
+
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,4 +20,4 @@ module.exports = {
       },
     },
   ],
-}
+};

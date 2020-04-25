@@ -3,7 +3,7 @@ title: "Blog"
 date: "2020-04-03"
 ---
 
-Welcome to my blog where I write about all front.end things.
+Welcome to my blog where I write about all front-end things.
 
 Funky JS, mystical CSS, and lots of contemplations about developer's journey.
 
