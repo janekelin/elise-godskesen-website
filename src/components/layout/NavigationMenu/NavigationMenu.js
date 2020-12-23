@@ -21,4 +21,9 @@ const NavigationMenu = () => {
   );
 };
 
+NavigationLink.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.children,
+};
+
 export default NavigationMenu;

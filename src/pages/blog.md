@@ -1,6 +1,6 @@
 ---
-title: "Blog"
-date: "2020-04-03"
+title: 'Blog'
+date: '2020-04-03'
 ---
 
 Welcome to my blog where I write about all front-end things.

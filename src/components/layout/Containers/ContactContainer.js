@@ -1,5 +1,5 @@
-import React from "react"
-import css from "./container.module.css"
+import React from 'react';
+import css from './container.module.css';
 
 const ContactContainer = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const ContactContainer = ({ children }) => {
       <h2 className={`sr-only ${css.title}`}>My contact details</h2>
       {children}
     </section>
-  )
-}
+  );
+};
 
-export default ContactContainer
+export default ContactContainer;

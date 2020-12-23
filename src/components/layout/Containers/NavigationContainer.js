@@ -1,5 +1,5 @@
-import React from "react"
-import css from "./container.module.css"
+import React from 'react';
+import css from './container.module.css';
 
 const NavigationContainer = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const NavigationContainer = ({ children }) => {
       <h2 className={`sr-only ${css.title}`}>Navigation</h2>
       {children}
     </nav>
-  )
-}
+  );
+};
 
-export default NavigationContainer
+export default NavigationContainer;
