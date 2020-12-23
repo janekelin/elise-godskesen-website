@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'gatsby';
 import css from './navigation.module.css';
@@ -19,11 +20,6 @@ const NavigationMenu = () => {
       </ul>
     </NavigationContainer>
   );
-};
-
-NavigationLink.propTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.children,
 };
 
 export default NavigationMenu;
