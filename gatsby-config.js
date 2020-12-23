@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 module.exports = {
   siteMetadata: {
-    title: `Iana Godskesen`,
+    title: `Elise Godskesen`,
   },
 
   plugins: [

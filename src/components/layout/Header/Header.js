@@ -1,8 +1,8 @@
-import React from "react"
-import NavigationMenu from "../NavigationMenu"
-import css from "./header.module.css"
-import portrait from "../../../images/b_image0.png"
-import { useStaticQuery, Link, graphql } from "gatsby"
+import React from 'react';
+import NavigationMenu from '../NavigationMenu';
+import css from './header.module.css';
+import portrait from '../../../images/b_image0.png';
+import { useStaticQuery, Link, graphql } from 'gatsby';
 
 const Header = () => {
   const data = useStaticQuery(
@@ -15,7 +15,7 @@ const Header = () => {
         }
       }
     `
-  )
+  );
 
   return (
     <header className={css.header}>
@@ -28,10 +28,10 @@ const Header = () => {
       <img
         className={css.portrait}
         src={portrait}
-        alt="Portrait of Iana Godskesen Kalinichenko"
+        alt="Portrait of Elise Godskesen"
       />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

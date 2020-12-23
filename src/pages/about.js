@@ -1,7 +1,7 @@
-import React from "react"
-import Page from "../components/layout/Page"
-import SectionContainer from "../components/layout/Containers/SectionContainer"
-import css from "../styles/typography.module.css"
+import React from 'react';
+import Page from '../components/layout/Page';
+import SectionContainer from '../components/layout/Containers/SectionContainer';
+import css from '../styles/typography.module.css';
 
 export default () => (
   <Page>
@@ -20,7 +20,7 @@ export default () => (
       <p>
         Check out my <i className="fab fa-linkedin"></i>
         <a
-          href="https://www.linkedin.com/in/ianagodskesen/"
+          href="https://www.linkedin.com/in/elisegodskesen/"
           className={css.link}
         >
           LinkedIn profile&nbsp;
@@ -29,4 +29,4 @@ export default () => (
       </p>
     </SectionContainer>
   </Page>
-)
+);
