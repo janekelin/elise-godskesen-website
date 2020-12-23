@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className={css.footer}>
       <p>
-        &copy;2018-2019 - &nbsp;
+        &copy;2018-2020 - &nbsp;
         <a href="mailto:elise.godskesen@outlook.com">
           <FontAwesomeIcon icon={faEnvelope} /> Elise Godskesen
         </a>

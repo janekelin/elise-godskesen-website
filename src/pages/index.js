@@ -17,17 +17,6 @@ export default ({ data }) => (
         From <strong className={css.accent}>November 2019</strong>, I am a
         Front-End developer at Fitness24Seven.
       </p>
-      <p>
-        On my blog I have {data.allMarkdownRemark.totalCount} post/s. Check it
-        out:
-      </p>
-      {data.allMarkdownRemark.nodes.map(n => (
-        <div key={n.id}>
-          <h3>{n.frontmatter.title}</h3>
-          <span>{n.frontmatter.date}</span>
-          <p>{n.excerpt}</p>
-        </div>
-      ))}
     </SectionContainer>
   </Page>
 );
